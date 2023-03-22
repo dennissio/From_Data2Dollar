@@ -40,10 +40,8 @@ class AirbnbsSpider(scrapy.Spider):
         paginator = 0
         sel_page = Selector(text=self.driver.page_source)
         page = sel_page.xpath('//nav/div[@class= "_jro6t0"]/a/text()').extract()
-        print(page)
         page = [int(x) for x in page]
         max_page = max(page)
-        print(max_page)
         while paginator <= max_page:
             sleep(25)
             self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight - 10);")
@@ -52,21 +50,22 @@ class AirbnbsSpider(scrapy.Spider):
             
             for zimmer in alle_zimmer:
                 title = zimmer.xpath('.//*[@class = "t1jojoys dir dir-ltr"]/text()').extract()
-                #anbieter = np.array(alle_zimmer.xpath('//span[@class = "dir dir-ltr"]').extract_first())
-                preis = zimmer.xpath('.//*[@class = "_tyxjp1"]/text()').extract()
+                anbieter = zimmer.xpath('.//div[@class= "f15liw5s s1cjsi4j dir dir-ltr"]/span/text()').extract()
+                try:
+                    anbieter = anbieter[1]
+                except:
+                    anbieter = "NA"
+                preis = zimmer.xpath('.//*[@class = "_tt122m"]/span/text()').extract()
                 rating = zimmer.xpath('.//span[@class = "r1dxllyb dir dir-ltr"]/text()').extract()
-                #for i in range(len(title)):
                 yield {'title':title,
                 'price':preis,
-                'rating':rating}
-                #'provider':anbieter,
+                'rating':rating,
+                'provider':anbieter}
             sel = Selector(text=self.driver.page_source)
             sleep(5)
             weiter = self.driver.find_element_by_xpath('//*[@class="_1bfat5l l1j9v1wn dir dir-ltr"]')
             paginator = paginator + 1
             self.driver.execute_script("arguments[0].click();", weiter)
-                
-            
         self.driver.close()
 
        
