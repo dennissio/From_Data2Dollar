@@ -48,7 +48,7 @@ class AirbnbsSpider(scrapy.Spider):
         chrome_options.add_argument("--headless")
         chrome_options.add_argument("--window-size=%s" % WINDOW_SIZE)
         # Getting the hotels list of the page and iterating over each of them
-        datum = date.today()
+        datum = '2023-04-04' #date.today()
         self.driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH,
                               chrome_options=chrome_options
                              )
