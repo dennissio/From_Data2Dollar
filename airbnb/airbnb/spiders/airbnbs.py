@@ -48,7 +48,7 @@ class AirbnbsSpider(scrapy.Spider):
         chrome_options.add_argument("--headless")
         chrome_options.add_argument("--window-size=%s" % WINDOW_SIZE)
         # Getting the hotels list of the page and iterating over each of them
-        datum = '2023-04-04' #date.today()
+        datum = date.today()
         self.driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH,
                               chrome_options=chrome_options
                              )
@@ -61,7 +61,6 @@ class AirbnbsSpider(scrapy.Spider):
                         'hamburg_e': ['Hamburg', '2023-05-05', '2023-05-06', 'ja'], 'hamburg_n': ['Hamburg', '2023-05-26', '2023-05-27', 'nein'], 'berlin_e': ['Berlin', '2023-05-27', '2023-05-28', 'ja'], 'berlin_n': ['Berlin', '2023-06-17', '2023-06-18', 'nein'],
                         'monaco_e': ['Monaco-City', '2023-05-27', '2023-05-28', 'ja'], 'monaco_n': ['Monaco-City', '2023-06-17', '2023-06-18', 'nein'], 'nord_e': ['Noordwijk', '2023-04-21', '2023-04-22', 'ja'], 'nord_n': ['Noordwijk', '2023-05-12', '2023-05-13', 'nein'],
                         'bologna_e': ['Bologna', '2023-05-20', '2023-05-21', 'ja'], 'bologna_n': ['Bologna', '2023-06-10', '2023-06-11', 'nein'], 'halle_e': ['Halle', '2023-06-02', '2023-06-03', 'ja'], 'halle_n': ['Halle', '2023-06-23', '2023-06-24', 'nein']}          
-        
         
         person = '2'
         #urls = 'https://www.airbnb.ch/s/basel/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&date_picker_type=calendar&checkin=2023-03-27&checkout=2023-03-28&adults=2&source=structured_search_input_header&search_type=filter_change' #[f'https://www.airbnb.com/s/{city}/homes/' for city in cities]
