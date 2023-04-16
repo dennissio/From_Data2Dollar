@@ -3,9 +3,33 @@ import pandas as pd
 from datetime import datetime
 
 queries = [
-    "#amsterdam",
+    "#MLF23",
+    "#BBF23",
+    "#NS20ans",
+    "#lbjw23",
+    "#bruzzelsjazz",
+    "#BrusselsJazzWeekend",
+    "#jazzinbelgium",
+    "#Frühlingsfest",
+    "#kingsday #amsterdam",
     "#kingsday",
-    "#amsterdam #kingsday"
+    "#FeriaSevilla",
+    "#FeriadeAbril",
+    "#apriljazz",
+    "#apriljazzclub",
+    "#siltäkuulostaa",
+    "#FoodiesFestival",
+    "#hafengeburtstag #hamburg",
+    "#hafengeburtstag",
+    "#Karnevalderkulturen #Berlin",
+    "#Karnevalderkulturen",
+    "#MonacoGP",
+    "#tulipsinholland", 
+    "#bloemencorso",
+    "#BloemencorsoFlowerParade",
+    "#ImolaGP",
+    "#Halle #HändelFestival",
+    "#HändelFestival",
 ]
 
 since_date = '2023-03-29'
