@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 
 # Load the model
-model = pickle.load(open("model.pkl", "rb"))
+model = pickle.load(open("model_neu.pkl", "rb"))
 
 # Load the dataset
 df = pd.read_csv('xgb_data.csv')
