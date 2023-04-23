@@ -7,7 +7,7 @@ import os
 #model = pickle.load(open("model_neu.pkl", "rb"))
 
 # Load the dataset
-df = pd.read_csv('xgb_data.csv')
+#df = pd.read_csv('xgb_data.csv')
 
 # Function to predict the price
 st.title('AirBnB Price Prediction')
