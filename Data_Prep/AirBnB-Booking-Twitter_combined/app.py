@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import pickle
-import xgboost as xgb
 
 # Load the model
 model = pickle.load(open('model.pkl', 'rb'))
