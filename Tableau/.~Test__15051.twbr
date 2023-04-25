@@ -1,0 +1,3105 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.23.0312.0353                               -->
+<workbook original-version='18.1' source-build='2022.4.2 (20224.23.0312.0353)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <BasicButtonObjectTextSupport />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookOptimizerRuleConfig.true...WorkbookOptimizerRuleConfig />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Data2Dollar' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='data_combined' inline='true' name='federated.0h4splk06q1hl511pcmwn1gt4ze3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data_combined' name='textscan.155aa0s055ntgo12byo4y02q6ado'>
+            <connection class='textscan' directory='/Users/denizharimci/Documents/GitHub/From_Data2Dollar/Data Prep/AirBnB-Booking-Twitter_combined' filename='data_combined.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.155aa0s055ntgo12byo4y02q6ado' name='data_combined.csv' table='[data_combined#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='de_CH' separator=','>
+            <column datatype='integer' name='Unnamed: 0' ordinal='0' />
+            <column datatype='date' name='date_crawl' ordinal='1' />
+            <column datatype='string' name='city' ordinal='2' />
+            <column datatype='string' name='uid' ordinal='3' />
+            <column datatype='date' name='book_date' ordinal='4' />
+            <column datatype='integer' name='price' ordinal='5' />
+            <column datatype='boolean' name='event' ordinal='6' />
+            <column datatype='real' name='rating' ordinal='7' />
+            <column datatype='string' name='provider' ordinal='8' />
+            <column datatype='string' name='source' ordinal='9' />
+            <column datatype='string' name='event_name' ordinal='10' />
+            <column datatype='integer' name='tweets' ordinal='11' />
+            <column datatype='integer' name='retweets' ordinal='12' />
+            <column datatype='integer' name='likes' ordinal='13' />
+            <column datatype='integer' name='replies' ordinal='14' />
+            <column datatype='real' name='amplification_rate' ordinal='15' />
+            <column datatype='real' name='conversation_rate' ordinal='16' />
+            <column datatype='real' name='applause_rate' ordinal='17' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.155aa0s055ntgo12byo4y02q6ado' name='data_combined.csv' table='[data_combined#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='de_CH' separator=','>
+            <column datatype='integer' name='Unnamed: 0' ordinal='0' />
+            <column datatype='date' name='date_crawl' ordinal='1' />
+            <column datatype='string' name='city' ordinal='2' />
+            <column datatype='string' name='uid' ordinal='3' />
+            <column datatype='date' name='book_date' ordinal='4' />
+            <column datatype='integer' name='price' ordinal='5' />
+            <column datatype='boolean' name='event' ordinal='6' />
+            <column datatype='real' name='rating' ordinal='7' />
+            <column datatype='string' name='provider' ordinal='8' />
+            <column datatype='string' name='source' ordinal='9' />
+            <column datatype='string' name='event_name' ordinal='10' />
+            <column datatype='integer' name='tweets' ordinal='11' />
+            <column datatype='integer' name='retweets' ordinal='12' />
+            <column datatype='integer' name='likes' ordinal='13' />
+            <column datatype='integer' name='replies' ordinal='14' />
+            <column datatype='real' name='amplification_rate' ordinal='15' />
+            <column datatype='real' name='conversation_rate' ordinal='16' />
+            <column datatype='real' name='applause_rate' ordinal='17' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data_combined.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;de&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;CHF&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;de_CH&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;’&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unnamed: 0</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Unnamed: 0]</local-name>
+            <parent-name>[data_combined.csv]</parent-name>
+            <remote-alias>Unnamed: 0</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_crawl</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date_crawl]</local-name>
+            <parent-name>[data_combined.csv]</parent-name>
+            <remote-alias>date_crawl</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[data_combined.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uid</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[uid]</local-name>
+            <parent-name>[data_combined.csv]</parent-name>
+            <remote-alias>uid</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>book_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[book_date]</local-name>
+            <parent-name>[data_combined.csv]</parent-name>
+            <remote-alias>book_date</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[data_combined.csv]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>event</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[event]</local-name>
+            <parent-name>[data_combined.csv]</parent-name>
+            <remote-alias>event</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[data_combined.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>provider</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[provider]</local-name>
+            <parent-name>[data_combined.csv]</parent-name>
+            <remote-alias>provider</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[source]</local-name>
+            <parent-name>[data_combined.csv]</parent-name>
+            <remote-alias>source</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>event_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[event_name]</local-name>
+            <parent-name>[data_combined.csv]</parent-name>
+            <remote-alias>event_name</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tweets</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tweets]</local-name>
+            <parent-name>[data_combined.csv]</parent-name>
+            <remote-alias>tweets</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retweets</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[retweets]</local-name>
+            <parent-name>[data_combined.csv]</parent-name>
+            <remote-alias>retweets</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>likes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[likes]</local-name>
+            <parent-name>[data_combined.csv]</parent-name>
+            <remote-alias>likes</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>replies</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[replies]</local-name>
+            <parent-name>[data_combined.csv]</parent-name>
+            <remote-alias>replies</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amplification_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[amplification_rate]</local-name>
+            <parent-name>[data_combined.csv]</parent-name>
+            <remote-alias>amplification_rate</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>conversation_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[conversation_rate]</local-name>
+            <parent-name>[data_combined.csv]</parent-name>
+            <remote-alias>conversation_rate</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>applause_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[applause_rate]</local-name>
+            <parent-name>[data_combined.csv]</parent-name>
+            <remote-alias>applause_rate</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' hidden='true' name='[Unnamed: 0]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='data_combined.csv' datatype='table' name='[__tableau_internal_object_id__].[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]' role='measure' type='quantitative' />
+      <column datatype='real' name='[amplification_rate]' role='measure' type='quantitative' />
+      <column datatype='real' name='[applause_rate]' role='measure' type='quantitative' />
+      <column caption='Book Date' datatype='date' name='[book_date]' role='dimension' type='ordinal' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+        <semantic-values semantic-role='[Geographical].[Latitude]'>
+          <semantic-value key='&quot;Amsterdam&quot;' value='52.350000000000001' />
+          <semantic-value key='&quot;Barcelona&quot;' value='41.3825' />
+          <semantic-value key='&quot;Berlin&quot;' value='52.516199999999998' />
+          <semantic-value key='&quot;Brighton&quot;' value='50.8429' />
+          <semantic-value key='&quot;Halle&quot;' value='51.482900000000001' />
+          <semantic-value key='&quot;Hamburg&quot;' value='53.550199999999997' />
+          <semantic-value key='&quot;La Palma&quot;' value='39.566699999999997' />
+          <semantic-value key='&quot;Lyon&quot;' value='45.759999999999998' />
+          <semantic-value key='&quot;Monaco&quot;' value='43.739600000000003' />
+          <semantic-value key='&quot;Sevilla&quot;' value='37.382800000000003' />
+        </semantic-values>
+        <semantic-values semantic-role='[Geographical].[Longitude]'>
+          <semantic-value key='&quot;Amsterdam&quot;' value='4.9165999999999999' />
+          <semantic-value key='&quot;Barcelona&quot;' value='2.1768999999999998' />
+          <semantic-value key='&quot;Berlin&quot;' value='13.377700000000001' />
+          <semantic-value key='&quot;Brighton&quot;' value='-0.1313' />
+          <semantic-value key='&quot;Halle&quot;' value='11.9693' />
+          <semantic-value key='&quot;Hamburg&quot;' value='9.9920000000000009' />
+          <semantic-value key='&quot;La Palma&quot;' value='2.6497000000000002' />
+          <semantic-value key='&quot;Lyon&quot;' value='4.8399999999999999' />
+          <semantic-value key='&quot;Monaco&quot;' value='7.4069000000000003' />
+          <semantic-value key='&quot;Sevilla&quot;' value='-5.9730999999999996' />
+        </semantic-values>
+        <semantic-values semantic-role='[City].[Name]'>
+          <semantic-value key='&quot;Bruessel&quot;' value='&quot;Brüssel&quot;' />
+          <semantic-value key='&quot;Muenchen&quot;' value='&quot;München&quot;' />
+        </semantic-values>
+      </column>
+      <column datatype='real' name='[conversation_rate]' role='measure' type='quantitative' />
+      <column caption='Date Crawl' datatype='date' name='[date_crawl]' role='dimension' type='ordinal' />
+      <column caption='Event' datatype='boolean' name='[event]' role='dimension' semantic-role='' type='nominal' />
+      <column caption='Event Name' datatype='string' name='[event_name]' role='dimension' semantic-role='' type='nominal' />
+      <column caption='Likes' datatype='integer' name='[likes]' role='measure' type='quantitative' />
+      <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+      <column caption='Provider' datatype='string' name='[provider]' role='dimension' type='nominal' />
+      <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+      <column caption='Replies' datatype='integer' name='[replies]' role='measure' type='quantitative' />
+      <column caption='Retweets' datatype='integer' name='[retweets]' role='measure' type='quantitative' />
+      <column caption='Tweets' datatype='integer' name='[tweets]' role='measure' type='quantitative' />
+      <column caption='Uid' datatype='string' name='[uid]' role='dimension' type='nominal' />
+      <column-instance column='[amplification_rate]' derivation='Avg' name='[avg:amplification_rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[applause_rate]' derivation='Avg' name='[avg:applause_rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[conversation_rate]' derivation='Avg' name='[avg:conversation_rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[uid]' derivation='Count' name='[cnt:uid:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[uid]' derivation='CountD' name='[ctd:uid:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[uid]' derivation='Count' forecast-column-base='[cnt:uid:qk]' forecast-column-type='forecast-value' name='[fVal:cnt:uid:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[price]' derivation='Median' forecast-column-base='[med:price:qk]' forecast-column-type='forecast-value' name='[fVal:med:price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[price]' derivation='Max' name='[max:price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[price]' derivation='Median' name='[med:price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[price]' derivation='Min' name='[min:price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[date_crawl]' derivation='Day-Trunc' name='[tdy:date_crawl:ok]' pivot='key' type='ordinal' />
+      <group caption='Aktion (TAG(Date Crawl))' hidden='true' name='[Action (DAY(Date Crawl))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[tdy:date_crawl:ok]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='de_DE' class='hyper' dbname='/Users/denizharimci/Documents/GitHub/From_Data2Dollar/Tableau/data_combined.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='04/21/2023 02:31:52 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='data_combined' increment-value='%null%' refresh-type='create' rows-inserted='202924' timestamp-start='2023-04-21 14:31:49.463' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>date_crawl</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date_crawl]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date_crawl</remote-alias>
+              <ordinal>0</ordinal>
+              <family>data_combined.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[city]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>city</remote-alias>
+              <ordinal>1</ordinal>
+              <family>data_combined.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>uid</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[uid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>uid</remote-alias>
+              <ordinal>2</ordinal>
+              <family>data_combined.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>52921</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>book_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[book_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>book_date</remote-alias>
+              <ordinal>3</ordinal>
+              <family>data_combined.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price</remote-alias>
+              <ordinal>4</ordinal>
+              <family>data_combined.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2255</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>event</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[event]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>event</remote-alias>
+              <ordinal>5</ordinal>
+              <family>data_combined.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rating</remote-alias>
+              <ordinal>6</ordinal>
+              <family>data_combined.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>464</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>provider</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[provider]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>provider</remote-alias>
+              <ordinal>7</ordinal>
+              <family>data_combined.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>source</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[source]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>source</remote-alias>
+              <ordinal>8</ordinal>
+              <family>data_combined.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>event_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[event_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>event_name</remote-alias>
+              <ordinal>9</ordinal>
+              <family>data_combined.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tweets</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tweets]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tweets</remote-alias>
+              <ordinal>10</ordinal>
+              <family>data_combined.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>retweets</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[retweets]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>retweets</remote-alias>
+              <ordinal>11</ordinal>
+              <family>data_combined.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>likes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[likes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>likes</remote-alias>
+              <ordinal>12</ordinal>
+              <family>data_combined.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>replies</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[replies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>replies</remote-alias>
+              <ordinal>13</ordinal>
+              <family>data_combined.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>amplification_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[amplification_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>amplification_rate</remote-alias>
+              <ordinal>14</ordinal>
+              <family>data_combined.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>conversation_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[conversation_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>conversation_rate</remote-alias>
+              <ordinal>15</ordinal>
+              <family>data_combined.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>applause_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[applause_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>applause_rate</remote-alias>
+              <ordinal>16</ordinal>
+              <family>data_combined.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]&#10;[none:Forecast Indicator:nk]' type='palette'>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[fVal:cnt:uid:qk]&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[fVal:med:price:qk]&quot;</bucket>
+            </map-pri>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#24693d'>
+              <bucket>&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[avg:amplification_rate:qk]&quot;</bucket>
+            </map>
+            <map to='#24693d'>
+              <bucket>&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[cnt:uid:qk]&quot;</bucket>
+            </map>
+            <map to='#24693d'>
+              <bucket>&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[ctd:uid:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[fVal:med:price:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[avg:conversation_rate:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[max:price:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[sum:price:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[fVal:cnt:uid:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[avg:applause_rate:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[med:price:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[min:price:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[City].[Name]' value='%null%' />
+        <semantic-value key='[Country].[Name]' value='%null%' />
+        <semantic-value key='[State].[Name]' value='%null%' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Ist-Wert&quot;</bucket>
+            <bucket>&quot;Schätzung&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='data_combined.csv' id='data_combined.csv_C1D447F333804AC5ABC6D16B5D6256F8'>
+            <properties context=''>
+              <relation connection='textscan.155aa0s055ntgo12byo4y02q6ado' name='data_combined.csv' table='[data_combined#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='de_CH' separator=','>
+                  <column datatype='integer' name='Unnamed: 0' ordinal='0' />
+                  <column datatype='date' name='date_crawl' ordinal='1' />
+                  <column datatype='string' name='city' ordinal='2' />
+                  <column datatype='string' name='uid' ordinal='3' />
+                  <column datatype='date' name='book_date' ordinal='4' />
+                  <column datatype='integer' name='price' ordinal='5' />
+                  <column datatype='boolean' name='event' ordinal='6' />
+                  <column datatype='real' name='rating' ordinal='7' />
+                  <column datatype='string' name='provider' ordinal='8' />
+                  <column datatype='string' name='source' ordinal='9' />
+                  <column datatype='string' name='event_name' ordinal='10' />
+                  <column datatype='integer' name='tweets' ordinal='11' />
+                  <column datatype='integer' name='retweets' ordinal='12' />
+                  <column datatype='integer' name='likes' ordinal='13' />
+                  <column datatype='integer' name='replies' ordinal='14' />
+                  <column datatype='real' name='amplification_rate' ordinal='15' />
+                  <column datatype='real' name='conversation_rate' ordinal='16' />
+                  <column datatype='real' name='applause_rate' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.0h4splk06q1hl511pcmwn1gt4ze3'>
+      <datasources>
+        <datasource caption='data_combined' name='federated.0h4splk06q1hl511pcmwn1gt4ze3' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0h4splk06q1hl511pcmwn1gt4ze3'>
+        <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+          <semantic-values semantic-role='[Geographical].[Latitude]'>
+            <semantic-value key='&quot;Amsterdam&quot;' value='52.350000000000001' />
+            <semantic-value key='&quot;Barcelona&quot;' value='41.3825' />
+            <semantic-value key='&quot;Berlin&quot;' value='52.516199999999998' />
+            <semantic-value key='&quot;Brighton&quot;' value='50.8429' />
+            <semantic-value key='&quot;Halle&quot;' value='51.482900000000001' />
+            <semantic-value key='&quot;Hamburg&quot;' value='53.550199999999997' />
+            <semantic-value key='&quot;La Palma&quot;' value='39.566699999999997' />
+            <semantic-value key='&quot;Lyon&quot;' value='45.759999999999998' />
+            <semantic-value key='&quot;Monaco&quot;' value='43.739600000000003' />
+            <semantic-value key='&quot;Sevilla&quot;' value='37.382800000000003' />
+          </semantic-values>
+          <semantic-values semantic-role='[Geographical].[Longitude]'>
+            <semantic-value key='&quot;Amsterdam&quot;' value='4.9165999999999999' />
+            <semantic-value key='&quot;Barcelona&quot;' value='2.1768999999999998' />
+            <semantic-value key='&quot;Berlin&quot;' value='13.377700000000001' />
+            <semantic-value key='&quot;Brighton&quot;' value='-0.1313' />
+            <semantic-value key='&quot;Halle&quot;' value='11.9693' />
+            <semantic-value key='&quot;Hamburg&quot;' value='9.9920000000000009' />
+            <semantic-value key='&quot;La Palma&quot;' value='2.6497000000000002' />
+            <semantic-value key='&quot;Lyon&quot;' value='4.8399999999999999' />
+            <semantic-value key='&quot;Monaco&quot;' value='7.4069000000000003' />
+            <semantic-value key='&quot;Sevilla&quot;' value='-5.9730999999999996' />
+          </semantic-values>
+          <semantic-values semantic-role='[City].[Name]'>
+            <semantic-value key='&quot;Bruessel&quot;' value='&quot;Brüssel&quot;' />
+            <semantic-value key='&quot;Muenchen&quot;' value='&quot;München&quot;' />
+          </semantic-values>
+        </column>
+        <column caption='Event' datatype='boolean' name='[event]' role='dimension' semantic-role='' type='nominal' />
+        <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+        <column-instance column='[event]' derivation='None' name='[none:event:nk]' pivot='key' type='nominal' />
+        <column-instance column='[provider]' derivation='None' name='[none:provider:nk]' pivot='key' type='nominal' />
+        <column-instance column='[source]' derivation='None' name='[none:source:nk]' pivot='key' type='nominal' />
+        <column caption='Provider' datatype='string' name='[provider]' role='dimension' type='nominal' />
+        <column datatype='string' name='[source]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk]'>
+        <groupfilter function='level-members' level='[none:city:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <target field='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:event:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:event:nk]' member='false' />
+          <groupfilter function='member' level='[none:event:nk]' member='true' />
+        </groupfilter>
+        <target field='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:event:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:provider:nk]'>
+        <groupfilter function='level-members' level='[none:provider:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:source:nk]'>
+        <groupfilter function='member' level='[none:source:nk]' member='&quot;booking&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generiert)' name='[Action1_DAECCE9DDFF94D0A82DF19262E7FEAE2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Datenanalyse' type='sheet' worksheet='Twitter rates' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Datenanalyse' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Anzahl Anbieter'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_combined' name='federated.0h4splk06q1hl511pcmwn1gt4ze3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h4splk06q1hl511pcmwn1gt4ze3'>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+              <semantic-values semantic-role='[Geographical].[Latitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='52.350000000000001' />
+                <semantic-value key='&quot;Barcelona&quot;' value='41.3825' />
+                <semantic-value key='&quot;Berlin&quot;' value='52.516199999999998' />
+                <semantic-value key='&quot;Brighton&quot;' value='50.8429' />
+                <semantic-value key='&quot;Halle&quot;' value='51.482900000000001' />
+                <semantic-value key='&quot;Hamburg&quot;' value='53.550199999999997' />
+                <semantic-value key='&quot;La Palma&quot;' value='39.566699999999997' />
+                <semantic-value key='&quot;Lyon&quot;' value='45.759999999999998' />
+                <semantic-value key='&quot;Monaco&quot;' value='43.739600000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='37.382800000000003' />
+              </semantic-values>
+              <semantic-values semantic-role='[Geographical].[Longitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='4.9165999999999999' />
+                <semantic-value key='&quot;Barcelona&quot;' value='2.1768999999999998' />
+                <semantic-value key='&quot;Berlin&quot;' value='13.377700000000001' />
+                <semantic-value key='&quot;Brighton&quot;' value='-0.1313' />
+                <semantic-value key='&quot;Halle&quot;' value='11.9693' />
+                <semantic-value key='&quot;Hamburg&quot;' value='9.9920000000000009' />
+                <semantic-value key='&quot;La Palma&quot;' value='2.6497000000000002' />
+                <semantic-value key='&quot;Lyon&quot;' value='4.8399999999999999' />
+                <semantic-value key='&quot;Monaco&quot;' value='7.4069000000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='-5.9730999999999996' />
+              </semantic-values>
+              <semantic-values semantic-role='[City].[Name]'>
+                <semantic-value key='&quot;Bruessel&quot;' value='&quot;Brüssel&quot;' />
+                <semantic-value key='&quot;Muenchen&quot;' value='&quot;München&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[event]' derivation='Count' name='[cnt:event:qk]' pivot='key' type='quantitative' />
+            <column caption='Date Crawl' datatype='date' name='[date_crawl]' role='dimension' type='ordinal' />
+            <column caption='Event' datatype='boolean' name='[event]' role='dimension' semantic-role='' type='nominal' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[event]' derivation='None' name='[none:event:nk]' pivot='key' type='nominal' />
+            <column-instance column='[provider]' derivation='None' name='[none:provider:nk]' pivot='key' type='nominal' />
+            <column-instance column='[source]' derivation='None' name='[none:source:nk]' pivot='key' type='nominal' />
+            <column caption='Provider' datatype='string' name='[provider]' role='dimension' type='nominal' />
+            <column datatype='string' name='[source]' role='dimension' type='nominal' />
+            <column-instance column='[date_crawl]' derivation='Day-Trunc' name='[tdy:date_crawl:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[Action (DAY(Date Crawl))]'>
+            <groupfilter function='level-members' level='[tdy:date_crawl:ok]' user:ui-action-filter='[Action1_DAECCE9DDFF94D0A82DF19262E7FEAE2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[Action (DAY(Date Crawl))]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:event:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:provider:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:source:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[cnt:event:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:provider:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{4966A5FA-B94B-4714-A104-92E48A5F7219}' />
+    </worksheet>
+    <worksheet name='Anzahl Event'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_combined' name='federated.0h4splk06q1hl511pcmwn1gt4ze3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h4splk06q1hl511pcmwn1gt4ze3'>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+              <semantic-values semantic-role='[Geographical].[Latitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='52.350000000000001' />
+                <semantic-value key='&quot;Barcelona&quot;' value='41.3825' />
+                <semantic-value key='&quot;Berlin&quot;' value='52.516199999999998' />
+                <semantic-value key='&quot;Brighton&quot;' value='50.8429' />
+                <semantic-value key='&quot;Halle&quot;' value='51.482900000000001' />
+                <semantic-value key='&quot;Hamburg&quot;' value='53.550199999999997' />
+                <semantic-value key='&quot;La Palma&quot;' value='39.566699999999997' />
+                <semantic-value key='&quot;Lyon&quot;' value='45.759999999999998' />
+                <semantic-value key='&quot;Monaco&quot;' value='43.739600000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='37.382800000000003' />
+              </semantic-values>
+              <semantic-values semantic-role='[Geographical].[Longitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='4.9165999999999999' />
+                <semantic-value key='&quot;Barcelona&quot;' value='2.1768999999999998' />
+                <semantic-value key='&quot;Berlin&quot;' value='13.377700000000001' />
+                <semantic-value key='&quot;Brighton&quot;' value='-0.1313' />
+                <semantic-value key='&quot;Halle&quot;' value='11.9693' />
+                <semantic-value key='&quot;Hamburg&quot;' value='9.9920000000000009' />
+                <semantic-value key='&quot;La Palma&quot;' value='2.6497000000000002' />
+                <semantic-value key='&quot;Lyon&quot;' value='4.8399999999999999' />
+                <semantic-value key='&quot;Monaco&quot;' value='7.4069000000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='-5.9730999999999996' />
+              </semantic-values>
+              <semantic-values semantic-role='[City].[Name]'>
+                <semantic-value key='&quot;Bruessel&quot;' value='&quot;Brüssel&quot;' />
+                <semantic-value key='&quot;Muenchen&quot;' value='&quot;München&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[event]' derivation='Count' name='[cnt:event:qk]' pivot='key' type='quantitative' />
+            <column caption='Date Crawl' datatype='date' name='[date_crawl]' role='dimension' type='ordinal' />
+            <column caption='Event' datatype='boolean' name='[event]' role='dimension' semantic-role='' type='nominal' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[event]' derivation='None' name='[none:event:nk]' pivot='key' type='nominal' />
+            <column-instance column='[provider]' derivation='None' name='[none:provider:nk]' pivot='key' type='nominal' />
+            <column-instance column='[source]' derivation='None' name='[none:source:nk]' pivot='key' type='nominal' />
+            <column caption='Provider' datatype='string' name='[provider]' role='dimension' type='nominal' />
+            <column datatype='string' name='[source]' role='dimension' type='nominal' />
+            <column-instance column='[date_crawl]' derivation='Day-Trunc' name='[tdy:date_crawl:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[Action (DAY(Date Crawl))]'>
+            <groupfilter function='level-members' level='[tdy:date_crawl:ok]' user:ui-action-filter='[Action1_DAECCE9DDFF94D0A82DF19262E7FEAE2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[Action (DAY(Date Crawl))]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:event:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:provider:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:source:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[cnt:event:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:event:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{63D3465C-653C-4B0B-A35E-1C4A7969F8D8}' />
+    </worksheet>
+    <worksheet name='Anzahl Tweets'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_combined' name='federated.0h4splk06q1hl511pcmwn1gt4ze3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h4splk06q1hl511pcmwn1gt4ze3'>
+            <column-instance column='[tweets]' derivation='Avg' name='[avg:tweets:qk]' pivot='key' type='quantitative' />
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+              <semantic-values semantic-role='[Geographical].[Latitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='52.350000000000001' />
+                <semantic-value key='&quot;Barcelona&quot;' value='41.3825' />
+                <semantic-value key='&quot;Berlin&quot;' value='52.516199999999998' />
+                <semantic-value key='&quot;Brighton&quot;' value='50.8429' />
+                <semantic-value key='&quot;Halle&quot;' value='51.482900000000001' />
+                <semantic-value key='&quot;Hamburg&quot;' value='53.550199999999997' />
+                <semantic-value key='&quot;La Palma&quot;' value='39.566699999999997' />
+                <semantic-value key='&quot;Lyon&quot;' value='45.759999999999998' />
+                <semantic-value key='&quot;Monaco&quot;' value='43.739600000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='37.382800000000003' />
+              </semantic-values>
+              <semantic-values semantic-role='[Geographical].[Longitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='4.9165999999999999' />
+                <semantic-value key='&quot;Barcelona&quot;' value='2.1768999999999998' />
+                <semantic-value key='&quot;Berlin&quot;' value='13.377700000000001' />
+                <semantic-value key='&quot;Brighton&quot;' value='-0.1313' />
+                <semantic-value key='&quot;Halle&quot;' value='11.9693' />
+                <semantic-value key='&quot;Hamburg&quot;' value='9.9920000000000009' />
+                <semantic-value key='&quot;La Palma&quot;' value='2.6497000000000002' />
+                <semantic-value key='&quot;Lyon&quot;' value='4.8399999999999999' />
+                <semantic-value key='&quot;Monaco&quot;' value='7.4069000000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='-5.9730999999999996' />
+              </semantic-values>
+              <semantic-values semantic-role='[City].[Name]'>
+                <semantic-value key='&quot;Bruessel&quot;' value='&quot;Brüssel&quot;' />
+                <semantic-value key='&quot;Muenchen&quot;' value='&quot;München&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Event' datatype='boolean' name='[event]' role='dimension' semantic-role='' type='nominal' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[event]' derivation='None' name='[none:event:nk]' pivot='key' type='nominal' />
+            <column-instance column='[provider]' derivation='None' name='[none:provider:nk]' pivot='key' type='nominal' />
+            <column-instance column='[source]' derivation='None' name='[none:source:nk]' pivot='key' type='nominal' />
+            <column caption='Provider' datatype='string' name='[provider]' role='dimension' type='nominal' />
+            <column datatype='string' name='[source]' role='dimension' type='nominal' />
+            <column caption='Tweets' datatype='integer' name='[tweets]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[avg:tweets:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[avg:tweets:qk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:event:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:provider:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:source:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{44A95724-8DD2-4F43-8904-46C84C71EACE}' />
+    </worksheet>
+    <worksheet name='Anzahl Zimmer_nicht'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_combined' name='federated.0h4splk06q1hl511pcmwn1gt4ze3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h4splk06q1hl511pcmwn1gt4ze3'>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+              <semantic-values semantic-role='[Geographical].[Latitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='52.350000000000001' />
+                <semantic-value key='&quot;Barcelona&quot;' value='41.3825' />
+                <semantic-value key='&quot;Berlin&quot;' value='52.516199999999998' />
+                <semantic-value key='&quot;Brighton&quot;' value='50.8429' />
+                <semantic-value key='&quot;Halle&quot;' value='51.482900000000001' />
+                <semantic-value key='&quot;Hamburg&quot;' value='53.550199999999997' />
+                <semantic-value key='&quot;La Palma&quot;' value='39.566699999999997' />
+                <semantic-value key='&quot;Lyon&quot;' value='45.759999999999998' />
+                <semantic-value key='&quot;Monaco&quot;' value='43.739600000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='37.382800000000003' />
+              </semantic-values>
+              <semantic-values semantic-role='[Geographical].[Longitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='4.9165999999999999' />
+                <semantic-value key='&quot;Barcelona&quot;' value='2.1768999999999998' />
+                <semantic-value key='&quot;Berlin&quot;' value='13.377700000000001' />
+                <semantic-value key='&quot;Brighton&quot;' value='-0.1313' />
+                <semantic-value key='&quot;Halle&quot;' value='11.9693' />
+                <semantic-value key='&quot;Hamburg&quot;' value='9.9920000000000009' />
+                <semantic-value key='&quot;La Palma&quot;' value='2.6497000000000002' />
+                <semantic-value key='&quot;Lyon&quot;' value='4.8399999999999999' />
+                <semantic-value key='&quot;Monaco&quot;' value='7.4069000000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='-5.9730999999999996' />
+              </semantic-values>
+              <semantic-values semantic-role='[City].[Name]'>
+                <semantic-value key='&quot;Bruessel&quot;' value='&quot;Brüssel&quot;' />
+                <semantic-value key='&quot;Muenchen&quot;' value='&quot;München&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[uid]' derivation='CountD' name='[ctd:uid:qk]' pivot='key' type='quantitative' />
+            <column caption='Event' datatype='boolean' name='[event]' role='dimension' semantic-role='' type='nominal' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[event]' derivation='None' name='[none:event:nk]' pivot='key' type='nominal' />
+            <column-instance column='[provider]' derivation='None' name='[none:provider:nk]' pivot='key' type='nominal' />
+            <column-instance column='[source]' derivation='None' name='[none:source:nk]' pivot='key' type='nominal' />
+            <column caption='Provider' datatype='string' name='[provider]' role='dimension' type='nominal' />
+            <column datatype='string' name='[source]' role='dimension' type='nominal' />
+            <column caption='Uid' datatype='string' name='[uid]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:event:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:provider:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:source:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[ctd:uid:qk]</rows>
+        <cols>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:source:nk]</cols>
+      </table>
+      <simple-id uuid='{63545E09-AD03-4DED-8BF1-2C6E8E660E73}' />
+    </worksheet>
+    <worksheet name='Anzahl airbnb/booking'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_combined' name='federated.0h4splk06q1hl511pcmwn1gt4ze3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h4splk06q1hl511pcmwn1gt4ze3'>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+              <semantic-values semantic-role='[Geographical].[Latitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='52.350000000000001' />
+                <semantic-value key='&quot;Barcelona&quot;' value='41.3825' />
+                <semantic-value key='&quot;Berlin&quot;' value='52.516199999999998' />
+                <semantic-value key='&quot;Brighton&quot;' value='50.8429' />
+                <semantic-value key='&quot;Halle&quot;' value='51.482900000000001' />
+                <semantic-value key='&quot;Hamburg&quot;' value='53.550199999999997' />
+                <semantic-value key='&quot;La Palma&quot;' value='39.566699999999997' />
+                <semantic-value key='&quot;Lyon&quot;' value='45.759999999999998' />
+                <semantic-value key='&quot;Monaco&quot;' value='43.739600000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='37.382800000000003' />
+              </semantic-values>
+              <semantic-values semantic-role='[Geographical].[Longitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='4.9165999999999999' />
+                <semantic-value key='&quot;Barcelona&quot;' value='2.1768999999999998' />
+                <semantic-value key='&quot;Berlin&quot;' value='13.377700000000001' />
+                <semantic-value key='&quot;Brighton&quot;' value='-0.1313' />
+                <semantic-value key='&quot;Halle&quot;' value='11.9693' />
+                <semantic-value key='&quot;Hamburg&quot;' value='9.9920000000000009' />
+                <semantic-value key='&quot;La Palma&quot;' value='2.6497000000000002' />
+                <semantic-value key='&quot;Lyon&quot;' value='4.8399999999999999' />
+                <semantic-value key='&quot;Monaco&quot;' value='7.4069000000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='-5.9730999999999996' />
+              </semantic-values>
+              <semantic-values semantic-role='[City].[Name]'>
+                <semantic-value key='&quot;Bruessel&quot;' value='&quot;Brüssel&quot;' />
+                <semantic-value key='&quot;Muenchen&quot;' value='&quot;München&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[event]' derivation='Count' name='[cnt:event:qk]' pivot='key' type='quantitative' />
+            <column caption='Date Crawl' datatype='date' name='[date_crawl]' role='dimension' type='ordinal' />
+            <column caption='Event' datatype='boolean' name='[event]' role='dimension' semantic-role='' type='nominal' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[event]' derivation='None' name='[none:event:nk]' pivot='key' type='nominal' />
+            <column-instance column='[provider]' derivation='None' name='[none:provider:nk]' pivot='key' type='nominal' />
+            <column-instance column='[source]' derivation='None' name='[none:source:nk]' pivot='key' type='nominal' />
+            <column caption='Provider' datatype='string' name='[provider]' role='dimension' type='nominal' />
+            <column datatype='string' name='[source]' role='dimension' type='nominal' />
+            <column-instance column='[date_crawl]' derivation='Day-Trunc' name='[tdy:date_crawl:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[Action (DAY(Date Crawl))]'>
+            <groupfilter function='level-members' level='[tdy:date_crawl:ok]' user:ui-action-filter='[Action1_DAECCE9DDFF94D0A82DF19262E7FEAE2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[Action (DAY(Date Crawl))]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:event:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:provider:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:source:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[cnt:event:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:source:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{D09E137C-2DA7-4E45-A5CE-40A43735A4BD}' />
+    </worksheet>
+    <worksheet name='Blatt 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_combined' name='federated.0h4splk06q1hl511pcmwn1gt4ze3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h4splk06q1hl511pcmwn1gt4ze3'>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+              <semantic-values semantic-role='[Geographical].[Latitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='52.350000000000001' />
+                <semantic-value key='&quot;Barcelona&quot;' value='41.3825' />
+                <semantic-value key='&quot;Berlin&quot;' value='52.516199999999998' />
+                <semantic-value key='&quot;Brighton&quot;' value='50.8429' />
+                <semantic-value key='&quot;Halle&quot;' value='51.482900000000001' />
+                <semantic-value key='&quot;Hamburg&quot;' value='53.550199999999997' />
+                <semantic-value key='&quot;La Palma&quot;' value='39.566699999999997' />
+                <semantic-value key='&quot;Lyon&quot;' value='45.759999999999998' />
+                <semantic-value key='&quot;Monaco&quot;' value='43.739600000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='37.382800000000003' />
+              </semantic-values>
+              <semantic-values semantic-role='[Geographical].[Longitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='4.9165999999999999' />
+                <semantic-value key='&quot;Barcelona&quot;' value='2.1768999999999998' />
+                <semantic-value key='&quot;Berlin&quot;' value='13.377700000000001' />
+                <semantic-value key='&quot;Brighton&quot;' value='-0.1313' />
+                <semantic-value key='&quot;Halle&quot;' value='11.9693' />
+                <semantic-value key='&quot;Hamburg&quot;' value='9.9920000000000009' />
+                <semantic-value key='&quot;La Palma&quot;' value='2.6497000000000002' />
+                <semantic-value key='&quot;Lyon&quot;' value='4.8399999999999999' />
+                <semantic-value key='&quot;Monaco&quot;' value='7.4069000000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='-5.9730999999999996' />
+              </semantic-values>
+              <semantic-values semantic-role='[City].[Name]'>
+                <semantic-value key='&quot;Bruessel&quot;' value='&quot;Brüssel&quot;' />
+                <semantic-value key='&quot;Muenchen&quot;' value='&quot;München&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Date Crawl' datatype='date' name='[date_crawl]' role='dimension' type='ordinal' />
+            <column caption='Event' datatype='boolean' name='[event]' role='dimension' semantic-role='' type='nominal' />
+            <column-instance column='[price]' derivation='Median' name='[med:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[event]' derivation='None' name='[none:event:nk]' pivot='key' type='nominal' />
+            <column-instance column='[provider]' derivation='None' name='[none:provider:nk]' pivot='key' type='nominal' />
+            <column-instance column='[source]' derivation='None' name='[none:source:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Provider' datatype='string' name='[provider]' role='dimension' type='nominal' />
+            <column datatype='string' name='[source]' role='dimension' type='nominal' />
+            <column-instance column='[date_crawl]' derivation='Weekday' name='[wd:date_crawl:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[date_crawl]' derivation='Year' name='[yr:date_crawl:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:event:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:provider:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:source:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[yr:date_crawl:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[med:price:qk]</rows>
+        <cols>([federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk] / [federated.0h4splk06q1hl511pcmwn1gt4ze3].[wd:date_crawl:ok])</cols>
+      </table>
+      <simple-id uuid='{DC4F1D0B-0CC8-4F0D-B281-EEFFFEDF6F7A}' />
+    </worksheet>
+    <worksheet name='Blatt 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_combined' name='federated.0h4splk06q1hl511pcmwn1gt4ze3' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0h4splk06q1hl511pcmwn1gt4ze3'>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+              <semantic-values semantic-role='[Geographical].[Latitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='52.350000000000001' />
+                <semantic-value key='&quot;Barcelona&quot;' value='41.3825' />
+                <semantic-value key='&quot;Berlin&quot;' value='52.516199999999998' />
+                <semantic-value key='&quot;Brighton&quot;' value='50.8429' />
+                <semantic-value key='&quot;Halle&quot;' value='51.482900000000001' />
+                <semantic-value key='&quot;Hamburg&quot;' value='53.550199999999997' />
+                <semantic-value key='&quot;La Palma&quot;' value='39.566699999999997' />
+                <semantic-value key='&quot;Lyon&quot;' value='45.759999999999998' />
+                <semantic-value key='&quot;Monaco&quot;' value='43.739600000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='37.382800000000003' />
+              </semantic-values>
+              <semantic-values semantic-role='[Geographical].[Longitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='4.9165999999999999' />
+                <semantic-value key='&quot;Barcelona&quot;' value='2.1768999999999998' />
+                <semantic-value key='&quot;Berlin&quot;' value='13.377700000000001' />
+                <semantic-value key='&quot;Brighton&quot;' value='-0.1313' />
+                <semantic-value key='&quot;Halle&quot;' value='11.9693' />
+                <semantic-value key='&quot;Hamburg&quot;' value='9.9920000000000009' />
+                <semantic-value key='&quot;La Palma&quot;' value='2.6497000000000002' />
+                <semantic-value key='&quot;Lyon&quot;' value='4.8399999999999999' />
+                <semantic-value key='&quot;Monaco&quot;' value='7.4069000000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='-5.9730999999999996' />
+              </semantic-values>
+              <semantic-values semantic-role='[City].[Name]'>
+                <semantic-value key='&quot;Bruessel&quot;' value='&quot;Brüssel&quot;' />
+                <semantic-value key='&quot;Muenchen&quot;' value='&quot;München&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Event' datatype='boolean' name='[event]' role='dimension' semantic-role='' type='nominal' />
+            <column-instance column='[price]' derivation='Median' name='[med:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[event]' derivation='None' name='[none:event:nk]' pivot='key' type='nominal' />
+            <column-instance column='[provider]' derivation='None' name='[none:provider:nk]' pivot='key' type='nominal' />
+            <column-instance column='[source]' derivation='None' name='[none:source:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Provider' datatype='string' name='[provider]' role='dimension' type='nominal' />
+            <column datatype='string' name='[source]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:event:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:provider:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:source:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[Longitude (generated)]' field-type='quantitative' max='4194512.9284253754' min='-2087035.8014298074' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[Latitude (generated)]' field-type='quantitative' max='8667723.5453394298' min='4255318.6733731776' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[med:price:qk]' field-type='quantitative' max-size='1' min-size='0' type='quantsize' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='normal' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <size column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[med:price:qk]' />
+              <lod column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#0a5e2d' />
+                <format attr='size' value='0.73678785562515259' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[Latitude (generated)]</rows>
+        <cols>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{C840BEB3-37DA-47E3-8A25-8473124032A3}' />
+    </worksheet>
+    <worksheet name='Blatt 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_combined' name='federated.0h4splk06q1hl511pcmwn1gt4ze3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h4splk06q1hl511pcmwn1gt4ze3'>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+              <semantic-values semantic-role='[Geographical].[Latitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='52.350000000000001' />
+                <semantic-value key='&quot;Barcelona&quot;' value='41.3825' />
+                <semantic-value key='&quot;Berlin&quot;' value='52.516199999999998' />
+                <semantic-value key='&quot;Brighton&quot;' value='50.8429' />
+                <semantic-value key='&quot;Halle&quot;' value='51.482900000000001' />
+                <semantic-value key='&quot;Hamburg&quot;' value='53.550199999999997' />
+                <semantic-value key='&quot;La Palma&quot;' value='39.566699999999997' />
+                <semantic-value key='&quot;Lyon&quot;' value='45.759999999999998' />
+                <semantic-value key='&quot;Monaco&quot;' value='43.739600000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='37.382800000000003' />
+              </semantic-values>
+              <semantic-values semantic-role='[Geographical].[Longitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='4.9165999999999999' />
+                <semantic-value key='&quot;Barcelona&quot;' value='2.1768999999999998' />
+                <semantic-value key='&quot;Berlin&quot;' value='13.377700000000001' />
+                <semantic-value key='&quot;Brighton&quot;' value='-0.1313' />
+                <semantic-value key='&quot;Halle&quot;' value='11.9693' />
+                <semantic-value key='&quot;Hamburg&quot;' value='9.9920000000000009' />
+                <semantic-value key='&quot;La Palma&quot;' value='2.6497000000000002' />
+                <semantic-value key='&quot;Lyon&quot;' value='4.8399999999999999' />
+                <semantic-value key='&quot;Monaco&quot;' value='7.4069000000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='-5.9730999999999996' />
+              </semantic-values>
+              <semantic-values semantic-role='[City].[Name]'>
+                <semantic-value key='&quot;Bruessel&quot;' value='&quot;Brüssel&quot;' />
+                <semantic-value key='&quot;Muenchen&quot;' value='&quot;München&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Event' datatype='boolean' name='[event]' role='dimension' semantic-role='' type='nominal' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[event]' derivation='None' name='[none:event:nk]' pivot='key' type='nominal' />
+            <column-instance column='[price]' derivation='None' name='[none:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[provider]' derivation='None' name='[none:provider:nk]' pivot='key' type='nominal' />
+            <column-instance column='[source]' derivation='None' name='[none:source:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Provider' datatype='string' name='[provider]' role='dimension' type='nominal' />
+            <column datatype='string' name='[source]' role='dimension' type='nominal' />
+            <column-instance column='[tweets]' derivation='Sum' name='[sum:tweets:qk]' pivot='key' type='quantitative' />
+            <column caption='Tweets' datatype='integer' name='[tweets]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:event:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:provider:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:source:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:price:qk]' field-type='quantitative' max='7331' min='-10' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='10' />
+            <format attr='div-level' scope='cols' value='10' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[sum:tweets:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:price:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='none' probability='95' scope='per-cell' value-column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[sum:tweets:qk]' z-order='2' />
+            <reference-line axis-column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:price:qk]' enable-instant-analytics='true' fill-above='true' fill-below='true' formula='average' id='refline1' label-type='none' percentage-bands='true' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[sum:tweets:qk]' z-order='1'>
+              <reference-line-value percentage='60' />
+              <reference-line-value percentage='80' />
+            </reference-line>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk]</rows>
+        <cols>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:price:qk]</cols>
+      </table>
+      <simple-id uuid='{41D6FB63-8F96-450F-8CE5-F0C198484FA7}' />
+    </worksheet>
+    <worksheet name='Blatt 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff'>Preis auf Verfügbarkeit</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_combined' name='federated.0h4splk06q1hl511pcmwn1gt4ze3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h4splk06q1hl511pcmwn1gt4ze3'>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+              <semantic-values semantic-role='[Geographical].[Latitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='52.350000000000001' />
+                <semantic-value key='&quot;Barcelona&quot;' value='41.3825' />
+                <semantic-value key='&quot;Berlin&quot;' value='52.516199999999998' />
+                <semantic-value key='&quot;Brighton&quot;' value='50.8429' />
+                <semantic-value key='&quot;Halle&quot;' value='51.482900000000001' />
+                <semantic-value key='&quot;Hamburg&quot;' value='53.550199999999997' />
+                <semantic-value key='&quot;La Palma&quot;' value='39.566699999999997' />
+                <semantic-value key='&quot;Lyon&quot;' value='45.759999999999998' />
+                <semantic-value key='&quot;Monaco&quot;' value='43.739600000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='37.382800000000003' />
+              </semantic-values>
+              <semantic-values semantic-role='[Geographical].[Longitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='4.9165999999999999' />
+                <semantic-value key='&quot;Barcelona&quot;' value='2.1768999999999998' />
+                <semantic-value key='&quot;Berlin&quot;' value='13.377700000000001' />
+                <semantic-value key='&quot;Brighton&quot;' value='-0.1313' />
+                <semantic-value key='&quot;Halle&quot;' value='11.9693' />
+                <semantic-value key='&quot;Hamburg&quot;' value='9.9920000000000009' />
+                <semantic-value key='&quot;La Palma&quot;' value='2.6497000000000002' />
+                <semantic-value key='&quot;Lyon&quot;' value='4.8399999999999999' />
+                <semantic-value key='&quot;Monaco&quot;' value='7.4069000000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='-5.9730999999999996' />
+              </semantic-values>
+              <semantic-values semantic-role='[City].[Name]'>
+                <semantic-value key='&quot;Bruessel&quot;' value='&quot;Brüssel&quot;' />
+                <semantic-value key='&quot;Muenchen&quot;' value='&quot;München&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[uid]' derivation='Count' name='[cnt:uid:qk]' pivot='key' type='quantitative' />
+            <column caption='Date Crawl' datatype='date' name='[date_crawl]' role='dimension' type='ordinal' />
+            <column caption='Event' datatype='boolean' name='[event]' role='dimension' semantic-role='' type='nominal' />
+            <column-instance column='[price]' derivation='Median' name='[med:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[event]' derivation='None' name='[none:event:nk]' pivot='key' type='nominal' />
+            <column-instance column='[provider]' derivation='None' name='[none:provider:nk]' pivot='key' type='nominal' />
+            <column-instance column='[source]' derivation='None' name='[none:source:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Provider' datatype='string' name='[provider]' role='dimension' type='nominal' />
+            <column datatype='string' name='[source]' role='dimension' type='nominal' />
+            <column-instance column='[date_crawl]' derivation='Day-Trunc' name='[tdy:date_crawl:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[date_crawl]' derivation='Day-Trunc' name='[tdy:date_crawl:qk]' pivot='key' type='quantitative' />
+            <column caption='Uid' datatype='string' name='[uid]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[Action (DAY(Date Crawl))]'>
+            <groupfilter function='level-members' level='[tdy:date_crawl:ok]' user:ui-action-filter='[Action1_DAECCE9DDFF94D0A82DF19262E7FEAE2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:source:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:provider:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:event:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[Action (DAY(Date Crawl))]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[med:price:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[tdy:date_crawl:qk]' field-type='quantitative' major-origin='#2023-04-07 11:05:45.642#' major-spacing='1.0' major-units='days' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:source:nk]' value='Source'>
+              <formatted-text>
+                <run>Source</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[cnt:uid:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[med:price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>([federated.0h4splk06q1hl511pcmwn1gt4ze3].[cnt:uid:qk] + [federated.0h4splk06q1hl511pcmwn1gt4ze3].[med:price:qk])</rows>
+        <cols>([federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:event:nk] * [federated.0h4splk06q1hl511pcmwn1gt4ze3].[tdy:date_crawl:qk])</cols>
+      </table>
+      <simple-id uuid='{30E93986-3965-4693-BA26-00C9B4BA74E9}' />
+    </worksheet>
+    <worksheet name='Preis Ort'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Preisentwicklung pro Plattform und Ort</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_combined' name='federated.0h4splk06q1hl511pcmwn1gt4ze3' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0h4splk06q1hl511pcmwn1gt4ze3'>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+              <semantic-values semantic-role='[Geographical].[Latitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='52.350000000000001' />
+                <semantic-value key='&quot;Barcelona&quot;' value='41.3825' />
+                <semantic-value key='&quot;Berlin&quot;' value='52.516199999999998' />
+                <semantic-value key='&quot;Brighton&quot;' value='50.8429' />
+                <semantic-value key='&quot;Halle&quot;' value='51.482900000000001' />
+                <semantic-value key='&quot;Hamburg&quot;' value='53.550199999999997' />
+                <semantic-value key='&quot;La Palma&quot;' value='39.566699999999997' />
+                <semantic-value key='&quot;Lyon&quot;' value='45.759999999999998' />
+                <semantic-value key='&quot;Monaco&quot;' value='43.739600000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='37.382800000000003' />
+              </semantic-values>
+              <semantic-values semantic-role='[Geographical].[Longitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='4.9165999999999999' />
+                <semantic-value key='&quot;Barcelona&quot;' value='2.1768999999999998' />
+                <semantic-value key='&quot;Berlin&quot;' value='13.377700000000001' />
+                <semantic-value key='&quot;Brighton&quot;' value='-0.1313' />
+                <semantic-value key='&quot;Halle&quot;' value='11.9693' />
+                <semantic-value key='&quot;Hamburg&quot;' value='9.9920000000000009' />
+                <semantic-value key='&quot;La Palma&quot;' value='2.6497000000000002' />
+                <semantic-value key='&quot;Lyon&quot;' value='4.8399999999999999' />
+                <semantic-value key='&quot;Monaco&quot;' value='7.4069000000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='-5.9730999999999996' />
+              </semantic-values>
+              <semantic-values semantic-role='[City].[Name]'>
+                <semantic-value key='&quot;Bruessel&quot;' value='&quot;Brüssel&quot;' />
+                <semantic-value key='&quot;Muenchen&quot;' value='&quot;München&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Date Crawl' datatype='date' name='[date_crawl]' role='dimension' type='ordinal' />
+            <column caption='Event' datatype='boolean' name='[event]' role='dimension' semantic-role='' type='nominal' />
+            <column-instance column='[price]' derivation='Max' name='[max:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='Median' name='[med:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='Min' name='[min:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date_crawl]' derivation='None' name='[none:date_crawl:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[event]' derivation='None' name='[none:event:nk]' pivot='key' type='nominal' />
+            <column-instance column='[provider]' derivation='None' name='[none:provider:nk]' pivot='key' type='nominal' />
+            <column-instance column='[source]' derivation='None' name='[none:source:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Provider' datatype='string' name='[provider]' role='dimension' type='nominal' />
+            <column datatype='string' name='[source]' role='dimension' type='nominal' />
+            <column-instance column='[date_crawl]' derivation='Day-Trunc' name='[tdy:date_crawl:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[max:price:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[med:price:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[min:price:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:date_crawl:qk]' included-values='in-range'>
+            <min>#2023-03-30#</min>
+            <max>#2023-04-13#</max>
+          </filter>
+          <slices>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:event:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:date_crawl:qk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:provider:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:source:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk] * [federated.0h4splk06q1hl511pcmwn1gt4ze3].[Multiple Values])</rows>
+        <cols>([federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:source:nk] / [federated.0h4splk06q1hl511pcmwn1gt4ze3].[tdy:date_crawl:ok])</cols>
+      </table>
+      <simple-id uuid='{9037344C-DF61-4B6B-9A73-FC7A1879673B}' />
+    </worksheet>
+    <worksheet name='Preis Ort Event'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Preisentwicklung pro Plattform und Ort mit Event</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_combined' name='federated.0h4splk06q1hl511pcmwn1gt4ze3' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0h4splk06q1hl511pcmwn1gt4ze3'>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+              <semantic-values semantic-role='[Geographical].[Latitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='52.350000000000001' />
+                <semantic-value key='&quot;Barcelona&quot;' value='41.3825' />
+                <semantic-value key='&quot;Berlin&quot;' value='52.516199999999998' />
+                <semantic-value key='&quot;Brighton&quot;' value='50.8429' />
+                <semantic-value key='&quot;Halle&quot;' value='51.482900000000001' />
+                <semantic-value key='&quot;Hamburg&quot;' value='53.550199999999997' />
+                <semantic-value key='&quot;La Palma&quot;' value='39.566699999999997' />
+                <semantic-value key='&quot;Lyon&quot;' value='45.759999999999998' />
+                <semantic-value key='&quot;Monaco&quot;' value='43.739600000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='37.382800000000003' />
+              </semantic-values>
+              <semantic-values semantic-role='[Geographical].[Longitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='4.9165999999999999' />
+                <semantic-value key='&quot;Barcelona&quot;' value='2.1768999999999998' />
+                <semantic-value key='&quot;Berlin&quot;' value='13.377700000000001' />
+                <semantic-value key='&quot;Brighton&quot;' value='-0.1313' />
+                <semantic-value key='&quot;Halle&quot;' value='11.9693' />
+                <semantic-value key='&quot;Hamburg&quot;' value='9.9920000000000009' />
+                <semantic-value key='&quot;La Palma&quot;' value='2.6497000000000002' />
+                <semantic-value key='&quot;Lyon&quot;' value='4.8399999999999999' />
+                <semantic-value key='&quot;Monaco&quot;' value='7.4069000000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='-5.9730999999999996' />
+              </semantic-values>
+              <semantic-values semantic-role='[City].[Name]'>
+                <semantic-value key='&quot;Bruessel&quot;' value='&quot;Brüssel&quot;' />
+                <semantic-value key='&quot;Muenchen&quot;' value='&quot;München&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Date Crawl' datatype='date' name='[date_crawl]' role='dimension' type='ordinal' />
+            <column caption='Event' datatype='boolean' name='[event]' role='dimension' semantic-role='' type='nominal' />
+            <column-instance column='[price]' derivation='Max' name='[max:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='Median' name='[med:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='Min' name='[min:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date_crawl]' derivation='None' name='[none:date_crawl:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[event]' derivation='None' name='[none:event:nk]' pivot='key' type='nominal' />
+            <column-instance column='[provider]' derivation='None' name='[none:provider:nk]' pivot='key' type='nominal' />
+            <column-instance column='[source]' derivation='None' name='[none:source:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Provider' datatype='string' name='[provider]' role='dimension' type='nominal' />
+            <column datatype='string' name='[source]' role='dimension' type='nominal' />
+            <column-instance column='[date_crawl]' derivation='Day-Trunc' name='[tdy:date_crawl:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[max:price:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[med:price:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[min:price:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:date_crawl:qk]' included-values='in-range'>
+            <min>#2023-03-30#</min>
+            <max>#2023-04-13#</max>
+          </filter>
+          <slices>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:event:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:date_crawl:qk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:provider:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:source:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk] * [federated.0h4splk06q1hl511pcmwn1gt4ze3].[Multiple Values])</rows>
+        <cols>([federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:source:nk] / [federated.0h4splk06q1hl511pcmwn1gt4ze3].[tdy:date_crawl:ok])</cols>
+      </table>
+      <simple-id uuid='{37007CBB-E461-4EEC-8C53-69A94C063D3E}' />
+    </worksheet>
+    <worksheet name='Preis Ort kein Event'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Preisentwicklung pro Plattform und Ort ohne Event</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_combined' name='federated.0h4splk06q1hl511pcmwn1gt4ze3' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0h4splk06q1hl511pcmwn1gt4ze3'>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+              <semantic-values semantic-role='[Geographical].[Latitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='52.350000000000001' />
+                <semantic-value key='&quot;Barcelona&quot;' value='41.3825' />
+                <semantic-value key='&quot;Berlin&quot;' value='52.516199999999998' />
+                <semantic-value key='&quot;Brighton&quot;' value='50.8429' />
+                <semantic-value key='&quot;Halle&quot;' value='51.482900000000001' />
+                <semantic-value key='&quot;Hamburg&quot;' value='53.550199999999997' />
+                <semantic-value key='&quot;La Palma&quot;' value='39.566699999999997' />
+                <semantic-value key='&quot;Lyon&quot;' value='45.759999999999998' />
+                <semantic-value key='&quot;Monaco&quot;' value='43.739600000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='37.382800000000003' />
+              </semantic-values>
+              <semantic-values semantic-role='[Geographical].[Longitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='4.9165999999999999' />
+                <semantic-value key='&quot;Barcelona&quot;' value='2.1768999999999998' />
+                <semantic-value key='&quot;Berlin&quot;' value='13.377700000000001' />
+                <semantic-value key='&quot;Brighton&quot;' value='-0.1313' />
+                <semantic-value key='&quot;Halle&quot;' value='11.9693' />
+                <semantic-value key='&quot;Hamburg&quot;' value='9.9920000000000009' />
+                <semantic-value key='&quot;La Palma&quot;' value='2.6497000000000002' />
+                <semantic-value key='&quot;Lyon&quot;' value='4.8399999999999999' />
+                <semantic-value key='&quot;Monaco&quot;' value='7.4069000000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='-5.9730999999999996' />
+              </semantic-values>
+              <semantic-values semantic-role='[City].[Name]'>
+                <semantic-value key='&quot;Bruessel&quot;' value='&quot;Brüssel&quot;' />
+                <semantic-value key='&quot;Muenchen&quot;' value='&quot;München&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Date Crawl' datatype='date' name='[date_crawl]' role='dimension' type='ordinal' />
+            <column caption='Event' datatype='boolean' name='[event]' role='dimension' semantic-role='' type='nominal' />
+            <column-instance column='[price]' derivation='Median' name='[med:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='Min' name='[min:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date_crawl]' derivation='None' name='[none:date_crawl:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[event]' derivation='None' name='[none:event:nk]' pivot='key' type='nominal' />
+            <column-instance column='[provider]' derivation='None' name='[none:provider:nk]' pivot='key' type='nominal' />
+            <column-instance column='[source]' derivation='None' name='[none:source:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Provider' datatype='string' name='[provider]' role='dimension' type='nominal' />
+            <column datatype='string' name='[source]' role='dimension' type='nominal' />
+            <column-instance column='[date_crawl]' derivation='Day-Trunc' name='[tdy:date_crawl:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[med:price:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[min:price:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:date_crawl:qk]' included-values='in-range'>
+            <min>#2023-03-30#</min>
+            <max>#2023-04-13#</max>
+          </filter>
+          <slices>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:event:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:date_crawl:qk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:provider:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:source:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk] * [federated.0h4splk06q1hl511pcmwn1gt4ze3].[Multiple Values])</rows>
+        <cols>([federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:source:nk] / [federated.0h4splk06q1hl511pcmwn1gt4ze3].[tdy:date_crawl:ok])</cols>
+      </table>
+      <simple-id uuid='{968D4C91-AB9C-4699-8B46-B1CB836A8E99}' />
+    </worksheet>
+    <worksheet name='Twitter rates'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff'>&lt;</run>
+            <run bold='true' fontcolor='#ffffff'>Sheet Name</run>
+            <run bold='true' fontcolor='#ffffff'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_combined' name='federated.0h4splk06q1hl511pcmwn1gt4ze3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h4splk06q1hl511pcmwn1gt4ze3'>
+            <column datatype='real' name='[amplification_rate]' role='measure' type='quantitative' />
+            <column datatype='real' name='[applause_rate]' role='measure' type='quantitative' />
+            <column-instance column='[amplification_rate]' derivation='Avg' name='[avg:amplification_rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[applause_rate]' derivation='Avg' name='[avg:applause_rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[conversation_rate]' derivation='Avg' name='[avg:conversation_rate:qk]' pivot='key' type='quantitative' />
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+              <semantic-values semantic-role='[Geographical].[Latitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='52.350000000000001' />
+                <semantic-value key='&quot;Barcelona&quot;' value='41.3825' />
+                <semantic-value key='&quot;Berlin&quot;' value='52.516199999999998' />
+                <semantic-value key='&quot;Brighton&quot;' value='50.8429' />
+                <semantic-value key='&quot;Halle&quot;' value='51.482900000000001' />
+                <semantic-value key='&quot;Hamburg&quot;' value='53.550199999999997' />
+                <semantic-value key='&quot;La Palma&quot;' value='39.566699999999997' />
+                <semantic-value key='&quot;Lyon&quot;' value='45.759999999999998' />
+                <semantic-value key='&quot;Monaco&quot;' value='43.739600000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='37.382800000000003' />
+              </semantic-values>
+              <semantic-values semantic-role='[Geographical].[Longitude]'>
+                <semantic-value key='&quot;Amsterdam&quot;' value='4.9165999999999999' />
+                <semantic-value key='&quot;Barcelona&quot;' value='2.1768999999999998' />
+                <semantic-value key='&quot;Berlin&quot;' value='13.377700000000001' />
+                <semantic-value key='&quot;Brighton&quot;' value='-0.1313' />
+                <semantic-value key='&quot;Halle&quot;' value='11.9693' />
+                <semantic-value key='&quot;Hamburg&quot;' value='9.9920000000000009' />
+                <semantic-value key='&quot;La Palma&quot;' value='2.6497000000000002' />
+                <semantic-value key='&quot;Lyon&quot;' value='4.8399999999999999' />
+                <semantic-value key='&quot;Monaco&quot;' value='7.4069000000000003' />
+                <semantic-value key='&quot;Sevilla&quot;' value='-5.9730999999999996' />
+              </semantic-values>
+              <semantic-values semantic-role='[City].[Name]'>
+                <semantic-value key='&quot;Bruessel&quot;' value='&quot;Brüssel&quot;' />
+                <semantic-value key='&quot;Muenchen&quot;' value='&quot;München&quot;' />
+              </semantic-values>
+            </column>
+            <column datatype='real' name='[conversation_rate]' role='measure' type='quantitative' />
+            <column caption='Date Crawl' datatype='date' name='[date_crawl]' role='dimension' type='ordinal' />
+            <column caption='Event' datatype='boolean' name='[event]' role='dimension' semantic-role='' type='nominal' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[event]' derivation='None' name='[none:event:nk]' pivot='key' type='nominal' />
+            <column-instance column='[provider]' derivation='None' name='[none:provider:nk]' pivot='key' type='nominal' />
+            <column-instance column='[source]' derivation='None' name='[none:source:nk]' pivot='key' type='nominal' />
+            <column caption='Provider' datatype='string' name='[provider]' role='dimension' type='nominal' />
+            <column datatype='string' name='[source]' role='dimension' type='nominal' />
+            <column-instance column='[date_crawl]' derivation='Day-Trunc' name='[tdy:date_crawl:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[avg:amplification_rate:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[avg:applause_rate:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0h4splk06q1hl511pcmwn1gt4ze3].[avg:conversation_rate:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:event:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:provider:nk]</column>
+            <column>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:source:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='154' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[Multiple Values]</rows>
+        <cols>[federated.0h4splk06q1hl511pcmwn1gt4ze3].[tdy:date_crawl:qk]</cols>
+      </table>
+      <simple-id uuid='{E4526E79-8C1D-4222-A4EC-B39300191EDF}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='data_combined' name='federated.0h4splk06q1hl511pcmwn1gt4ze3' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0h4splk06q1hl511pcmwn1gt4ze3'>
+        <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+          <semantic-values semantic-role='[Geographical].[Latitude]'>
+            <semantic-value key='&quot;Amsterdam&quot;' value='52.350000000000001' />
+            <semantic-value key='&quot;Barcelona&quot;' value='41.3825' />
+            <semantic-value key='&quot;Berlin&quot;' value='52.516199999999998' />
+            <semantic-value key='&quot;Brighton&quot;' value='50.8429' />
+            <semantic-value key='&quot;Halle&quot;' value='51.482900000000001' />
+            <semantic-value key='&quot;Hamburg&quot;' value='53.550199999999997' />
+            <semantic-value key='&quot;La Palma&quot;' value='39.566699999999997' />
+            <semantic-value key='&quot;Lyon&quot;' value='45.759999999999998' />
+            <semantic-value key='&quot;Monaco&quot;' value='43.739600000000003' />
+            <semantic-value key='&quot;Sevilla&quot;' value='37.382800000000003' />
+          </semantic-values>
+          <semantic-values semantic-role='[Geographical].[Longitude]'>
+            <semantic-value key='&quot;Amsterdam&quot;' value='4.9165999999999999' />
+            <semantic-value key='&quot;Barcelona&quot;' value='2.1768999999999998' />
+            <semantic-value key='&quot;Berlin&quot;' value='13.377700000000001' />
+            <semantic-value key='&quot;Brighton&quot;' value='-0.1313' />
+            <semantic-value key='&quot;Halle&quot;' value='11.9693' />
+            <semantic-value key='&quot;Hamburg&quot;' value='9.9920000000000009' />
+            <semantic-value key='&quot;La Palma&quot;' value='2.6497000000000002' />
+            <semantic-value key='&quot;Lyon&quot;' value='4.8399999999999999' />
+            <semantic-value key='&quot;Monaco&quot;' value='7.4069000000000003' />
+            <semantic-value key='&quot;Sevilla&quot;' value='-5.9730999999999996' />
+          </semantic-values>
+          <semantic-values semantic-role='[City].[Name]'>
+            <semantic-value key='&quot;Bruessel&quot;' value='&quot;Brüssel&quot;' />
+            <semantic-value key='&quot;Muenchen&quot;' value='&quot;München&quot;' />
+          </semantic-values>
+        </column>
+        <column caption='Event' datatype='boolean' name='[event]' role='dimension' semantic-role='' type='nominal' />
+        <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+        <column-instance column='[event]' derivation='None' name='[none:event:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='57125' id='19' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='57125' id='14' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+              <zone h='57125' id='3' param='horz' type-v2='layout-flow' w='75800' x='800' y='1000'>
+                <zone h='57125' id='5' param='vert' type-v2='layout-flow' w='75800' x='800' y='1000'>
+                  <zone forceUpdate='true' h='5125' id='6' type-v2='text' w='75800' x='800' y='1000'>
+                    <formatted-text>
+                      <run fontcolor='#ffffff' fontname='Tableau Semibold' fontsize='18'>Dashboard</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                      <format attr='background-color' value='#0a5e2d' />
+                    </zone-style>
+                  </zone>
+                  <zone h='6500' id='24' param='vert' type-v2='layout-flow' w='75800' x='800' y='6125'>
+                    <zone h='6500' id='25' param='horz' type-v2='layout-flow' w='75800' x='800' y='6125'>
+                      <zone fixed-size='372' h='6500' id='7' is-fixed='true' type-v2='dashboard-object' w='38000' x='800' y='6125'>
+                        <button action='tabdoc:goto-sheet window-id=&quot;{85A96FA5-A738-4650-95B0-97F0EC9462D6}&quot;' button-type='text'>
+                          <button-visual-state>
+                            <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                            <format attr='background-color' value='#333333' />
+                          </button-visual-state>
+                        </button>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='6500' id='26' param='horz' type-v2='layout-flow' w='37800' x='38800' y='6125'>
+                        <zone h='6500' id='23' type-v2='dashboard-object' w='37800' x='38800' y='6125'>
+                          <button action='' button-type='text'>
+                            <button-visual-state>
+                              <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                              <format attr='background-color' value='#333333' />
+                            </button-visual-state>
+                          </button>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                  <zone h='10750' id='15' name='Preis Ort' pane-specification-id='5' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]' type-v2='color' w='75800' x='800' y='12625'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='34750' id='12' name='Preis Ort' w='75800' x='800' y='23375'>
+                    <layout-cache fixed-size-w='725' minheight='1641' type-h='scalable' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='226' h='57125' id='13' is-fixed='true' param='vert' type-v2='layout-flow' w='22600' x='76600' y='1000'>
+                <zone h='11125' id='20' name='Preis Ort' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:event:nk]' type-v2='filter' values='database' w='22600' x='76600' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='21' mode='checkdropdown' name='Preis Ort' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk]' type-v2='filter' values='database' w='22600' x='76600' y='12125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='40875' id='27' param='vert' type-v2='layout-flow' w='98400' x='800' y='58125' />
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+            <format attr='background-color' value='#0a5e2d' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='37' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='36' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone forceUpdate='true' h='5125' id='6' type-v2='text' w='75800' x='800' y='1000'>
+                  <formatted-text>
+                    <run fontcolor='#ffffff' fontname='Tableau Semibold' fontsize='18'>Dashboard</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#0a5e2d' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='372' h='6500' id='7' type-v2='dashboard-object' w='38000' x='800' y='6125'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{85A96FA5-A738-4650-95B0-97F0EC9462D6}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                      <format attr='background-color' value='#333333' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='23' type-v2='dashboard-object' w='37800' x='38800' y='6125'>
+                  <button action='' button-type='text'>
+                    <button-visual-state>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                      <format attr='background-color' value='#333333' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11125' id='20' mode='checkdropdown' name='Preis Ort' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:event:nk]' type-v2='filter' values='database' w='22600' x='76600' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='21' mode='checkdropdown' name='Preis Ort' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk]' type-v2='filter' values='database' w='22600' x='76600' y='12125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='270' h='34750' id='12' is-fixed='true' name='Preis Ort' w='75800' x='800' y='23375'>
+                  <layout-cache fixed-size-w='725' minheight='1641' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10750' id='15' name='Preis Ort' pane-specification-id='5' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]' type-v2='color' w='75800' x='800' y='12625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+                <format attr='background-color' value='#0a5e2d' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{B7F2C450-9EBE-4779-B966-7B7315CD7F30}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Datenanalyse'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontsize='20'>&lt;</run>
+            <run bold='true' fontcolor='#ffffff' fontsize='20'>Sheet Name</run>
+            <run bold='true' fontcolor='#ffffff' fontsize='20'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='data_combined' name='federated.0h4splk06q1hl511pcmwn1gt4ze3' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0h4splk06q1hl511pcmwn1gt4ze3'>
+        <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+          <semantic-values semantic-role='[Geographical].[Latitude]'>
+            <semantic-value key='&quot;Amsterdam&quot;' value='52.350000000000001' />
+            <semantic-value key='&quot;Barcelona&quot;' value='41.3825' />
+            <semantic-value key='&quot;Berlin&quot;' value='52.516199999999998' />
+            <semantic-value key='&quot;Brighton&quot;' value='50.8429' />
+            <semantic-value key='&quot;Halle&quot;' value='51.482900000000001' />
+            <semantic-value key='&quot;Hamburg&quot;' value='53.550199999999997' />
+            <semantic-value key='&quot;La Palma&quot;' value='39.566699999999997' />
+            <semantic-value key='&quot;Lyon&quot;' value='45.759999999999998' />
+            <semantic-value key='&quot;Monaco&quot;' value='43.739600000000003' />
+            <semantic-value key='&quot;Sevilla&quot;' value='37.382800000000003' />
+          </semantic-values>
+          <semantic-values semantic-role='[Geographical].[Longitude]'>
+            <semantic-value key='&quot;Amsterdam&quot;' value='4.9165999999999999' />
+            <semantic-value key='&quot;Barcelona&quot;' value='2.1768999999999998' />
+            <semantic-value key='&quot;Berlin&quot;' value='13.377700000000001' />
+            <semantic-value key='&quot;Brighton&quot;' value='-0.1313' />
+            <semantic-value key='&quot;Halle&quot;' value='11.9693' />
+            <semantic-value key='&quot;Hamburg&quot;' value='9.9920000000000009' />
+            <semantic-value key='&quot;La Palma&quot;' value='2.6497000000000002' />
+            <semantic-value key='&quot;Lyon&quot;' value='4.8399999999999999' />
+            <semantic-value key='&quot;Monaco&quot;' value='7.4069000000000003' />
+            <semantic-value key='&quot;Sevilla&quot;' value='-5.9730999999999996' />
+          </semantic-values>
+          <semantic-values semantic-role='[City].[Name]'>
+            <semantic-value key='&quot;Bruessel&quot;' value='&quot;Brüssel&quot;' />
+            <semantic-value key='&quot;Muenchen&quot;' value='&quot;München&quot;' />
+          </semantic-values>
+        </column>
+        <column caption='Event' datatype='boolean' name='[event]' role='dimension' semantic-role='' type='nominal' />
+        <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+        <column-instance column='[event]' derivation='None' name='[none:event:nk]' pivot='key' type='nominal' />
+        <column-instance column='[provider]' derivation='None' name='[none:provider:nk]' pivot='key' type='nominal' />
+        <column-instance column='[source]' derivation='None' name='[none:source:nk]' pivot='key' type='nominal' />
+        <column caption='Provider' datatype='string' name='[provider]' role='dimension' type='nominal' />
+        <column datatype='string' name='[source]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='63625' id='17' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='63625' id='5' param='vert' type-v2='layout-flow' w='77400' x='800' y='1000'>
+              <zone h='5625' id='7' type-v2='title' w='77400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='58000' id='8' param='vert' type-v2='layout-flow' w='77400' x='800' y='6625'>
+                <zone h='58000' id='9' param='vert' type-v2='layout-flow' w='77400' x='800' y='6625'>
+                  <zone h='4500' id='19' param='vert' type-v2='layout-flow' w='77400' x='800' y='6625'>
+                    <zone forceUpdate='true' h='4500' id='20' type-v2='text' w='77400' x='800' y='6625'>
+                      <formatted-text>
+                        <run bold='true' fontcolor='#ffffff' fontsize='15'>Datensatz Informationen</run>
+                      </formatted-text>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone h='8625' id='21' param='vert' type-v2='layout-flow' w='77400' x='800' y='11125'>
+                    <zone h='8625' id='22' param='horz' type-v2='layout-flow' w='77400' x='800' y='11125'>
+                      <zone h='8625' id='23' param='horz' type-v2='layout-flow' w='77400' x='800' y='11125'>
+                        <zone h='8625' id='25' param='horz' type-v2='layout-flow' w='14900' x='800' y='11125'>
+                          <zone h='6125' id='26' name='Anzahl airbnb/booking' show-title='false' w='14900' x='800' y='11125'>
+                            <layout-cache fixed-size-h='41' fixed-size-w='141' type-h='fixed' type-w='fixed' />
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                        </zone>
+                        <zone h='8625' id='24' name='Anzahl Event' show-title='false' w='14900' x='15700' y='11125'>
+                          <layout-cache fixed-size-h='61' fixed-size-w='141' type-h='fixed' type-w='fixed' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='8625' id='27' name='Anzahl Anbieter' show-title='false' w='14900' x='30600' y='11125'>
+                          <layout-cache fixed-size-h='61' fixed-size-w='141' type-h='fixed' type-w='fixed' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                  <zone h='44875' id='15' name='Blatt 5' w='77400' x='800' y='19750'>
+                    <layout-cache minheight='239' minwidth='334' type-h='scalable' type-w='scalable' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='210' h='63625' id='16' is-fixed='true' param='vert' type-v2='layout-flow' w='21000' x='78200' y='1000'>
+              <zone h='4500' id='37' type-v2='text' w='21000' x='78200' y='1000'>
+                <formatted-text>
+                  <run bold='true' fontcolor='#000000' fontsize='15'>Filter</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='13750' id='32' name='Blatt 5' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:event:nk]' show-apply='true' type-v2='filter' values='database' w='21000' x='78200' y='5500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='45000' id='31' param='vert' type-v2='layout-flow' w='21000' x='78200' y='19250'>
+                <zone h='13750' id='35' name='Blatt 5' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:provider:nk]' show-apply='true' type-v2='filter' values='database' w='21000' x='78200' y='19250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='33' mode='checkdropdown' name='Blatt 5' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk]' show-apply='true' type-v2='filter' values='database' w='21000' x='78200' y='33000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='124' h='16500' id='36' is-fixed='true' name='Blatt 5' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:source:nk]' show-apply='true' type-v2='filter' values='database' w='21000' x='78200' y='39500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='8250' id='18' name='Blatt 5' pane-specification-id='2' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]' type-v2='color' w='21000' x='78200' y='56000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='background-color' value='#d4d4d4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='34375' id='28' param='vert' type-v2='layout-flow' w='77400' x='800' y='64625'>
+            <zone h='34375' id='29' name='Twitter rates' w='77400' x='800' y='64625'>
+              <layout-cache minheight='198' type-h='scalable' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='34375' id='34' param='horz' type-v2='layout-flow' w='21000' x='78200' y='64625'>
+            <zone h='10750' id='30' name='Twitter rates' pane-specification-id='8' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]' type-v2='color' w='21000' x='78200' y='64625'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#ffffff' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='background-color' value='#d4d4d4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+            <format attr='background-color' value='#0a5e2d' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout name='Desktop'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff' fontsize='20'>&lt;</run>
+                <run bold='true' fontcolor='#ffffff' fontsize='20'>Sheet Name</run>
+                <run bold='true' fontcolor='#ffffff' fontsize='20'>&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <zones>
+            <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='63625' id='17' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='63625' id='5' param='vert' type-v2='layout-flow' w='77400' x='800' y='1000'>
+                  <zone h='5625' id='7' type-v2='title' w='77400' x='800' y='1000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='58000' id='8' param='vert' type-v2='layout-flow' w='77400' x='800' y='6625'>
+                    <zone h='58000' id='9' param='vert' type-v2='layout-flow' w='77400' x='800' y='6625'>
+                      <zone h='4500' id='19' param='vert' type-v2='layout-flow' w='77400' x='800' y='6625'>
+                        <zone forceUpdate='true' h='4500' id='20' type-v2='text' w='77400' x='800' y='6625'>
+                          <formatted-text>
+                            <run bold='true' fontcolor='#ffffff' fontsize='15'>Datensatz Informationen</run>
+                          </formatted-text>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                      </zone>
+                      <zone h='8625' id='21' param='vert' type-v2='layout-flow' w='77400' x='800' y='11125'>
+                        <zone h='8625' id='22' param='horz' type-v2='layout-flow' w='77400' x='800' y='11125'>
+                          <zone h='8625' id='23' param='horz' type-v2='layout-flow' w='77400' x='800' y='11125'>
+                            <zone h='8625' id='25' param='horz' type-v2='layout-flow' w='14900' x='800' y='11125'>
+                              <zone h='6125' id='26' name='Anzahl airbnb/booking' show-title='false' w='14900' x='800' y='11125'>
+                                <layout-cache fixed-size-h='41' fixed-size-w='141' type-h='fixed' type-w='fixed' />
+                                <zone-style>
+                                  <format attr='border-color' value='#000000' />
+                                  <format attr='border-style' value='none' />
+                                  <format attr='border-width' value='0' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                            </zone>
+                            <zone h='8625' id='24' name='Anzahl Event' show-title='false' w='14900' x='15700' y='11125'>
+                              <layout-cache fixed-size-h='61' fixed-size-w='141' type-h='fixed' type-w='fixed' />
+                              <zone-style>
+                                <format attr='border-color' value='#000000' />
+                                <format attr='border-style' value='none' />
+                                <format attr='border-width' value='0' />
+                                <format attr='margin' value='4' />
+                              </zone-style>
+                            </zone>
+                            <zone h='8625' id='27' name='Anzahl Anbieter' show-title='false' w='14900' x='30600' y='11125'>
+                              <layout-cache fixed-size-h='41' fixed-size-w='141' type-h='fixed' type-w='fixed' />
+                              <zone-style>
+                                <format attr='border-color' value='#000000' />
+                                <format attr='border-style' value='none' />
+                                <format attr='border-width' value='0' />
+                                <format attr='margin' value='4' />
+                              </zone-style>
+                            </zone>
+                          </zone>
+                        </zone>
+                      </zone>
+                      <zone h='44875' id='15' name='Blatt 5' w='77400' x='800' y='19750'>
+                        <layout-cache minheight='239' minwidth='321' type-h='scalable' type-w='scalable' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+                <zone fixed-size='210' h='63625' id='16' is-fixed='true' param='vert' type-v2='layout-flow' w='21000' x='78200' y='1000'>
+                  <zone h='4500' id='37' type-v2='text' w='21000' x='78200' y='1000'>
+                    <formatted-text>
+                      <run bold='true' fontcolor='#000000' fontsize='15'>Filter</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='13750' id='32' name='Blatt 5' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:event:nk]' show-apply='true' type-v2='filter' values='database' w='21000' x='78200' y='5500'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='42250' id='31' param='vert' type-v2='layout-flow' w='21000' x='78200' y='19250'>
+                    <zone h='13750' id='35' name='Blatt 5' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:provider:nk]' show-apply='true' type-v2='filter' values='database' w='21000' x='78200' y='19250'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='6500' id='33' mode='checkdropdown' name='Blatt 5' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk]' show-apply='true' type-v2='filter' values='database' w='21000' x='78200' y='33000'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone fixed-size='124' h='13750' id='36' is-fixed='true' name='Blatt 5' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:source:nk]' show-apply='true' type-v2='filter' values='database' w='21000' x='78200' y='39500'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='8250' id='18' name='Blatt 5' pane-specification-id='2' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]' type-v2='color' w='21000' x='78200' y='53250'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                        <format attr='background-color' value='#ffffff' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='background-color' value='#d4d4d4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='34375' id='28' param='vert' type-v2='layout-flow' w='77400' x='800' y='64625'>
+                <zone h='34375' id='29' name='Twitter rates' w='77400' x='800' y='64625'>
+                  <layout-cache minheight='198' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='34375' id='34' param='horz' type-v2='layout-flow' w='21000' x='78200' y='64625'>
+                <zone h='10750' id='30' name='Twitter rates' pane-specification-id='8' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]' type-v2='color' w='21000' x='78200' y='64625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='background-color' value='#d4d4d4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+                <format attr='background-color' value='#0a5e2d' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{64A2009B-8295-4672-BB79-E4302004E3E8}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Preis Ort'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='5' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{58839B4F-7C0B-452B-9825-3D5E11640DC5}' />
+    </window>
+    <window class='worksheet' name='Preis Ort Event'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='5' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{33E386E1-79BA-4649-8EA1-7CDABAC3609A}' />
+    </window>
+    <window class='worksheet' name='Preis Ort kein Event'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='5' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DCF518E4-9216-43F2-A117-842B4BC041D0}' />
+    </window>
+    <window class='worksheet' name='Blatt 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[yr:date_crawl:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CA042960-5332-421B-9EF2-9A1AFDD7954B}' />
+    </window>
+    <window class='worksheet' name='Blatt 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='2' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{14EABE33-3BC9-48D3-AE90-61DA683A0139}' />
+    </window>
+    <window class='worksheet' name='Blatt 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[none:city:nk]' type='highlighter' />
+            <card pane-specification-id='0' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[med:price:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{71EF88FB-5928-46C2-A8EA-2E6D1A13DA66}' />
+    </window>
+    <window class='worksheet' name='Twitter rates'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='8' param='[federated.0h4splk06q1hl511pcmwn1gt4ze3].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FBB6116B-356F-4976-9283-A283187D3778}' />
+    </window>
+    <window class='worksheet' name='Blatt 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{95CEEFF1-94A8-482C-B948-62C1AC4D3BCF}' />
+    </window>
+    <window class='worksheet' name='Anzahl Event'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6DE0F364-7182-402D-9B7F-E2CC8128D6D8}' />
+    </window>
+    <window class='worksheet' name='Anzahl airbnb/booking'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8213AEA3-9530-4E6C-98EF-17041278A6D3}' />
+    </window>
+    <window class='worksheet' name='Anzahl Anbieter'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{16400EF5-FB7A-4F49-A334-FD54CEA4EAE2}' />
+    </window>
+    <window class='worksheet' name='Anzahl Zimmer_nicht'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FFCA5C47-76E5-47D9-AE78-BD392841105E}' />
+    </window>
+    <window class='worksheet' name='Anzahl Tweets'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8151ACE1-E695-4E7E-B100-7D75D8599899}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Datenanalyse'>
+      <viewpoints>
+        <viewpoint name='Anzahl Anbieter' />
+        <viewpoint name='Anzahl Event' />
+        <viewpoint name='Anzahl airbnb/booking' />
+        <viewpoint name='Blatt 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Twitter rates'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='36' />
+      <simple-id uuid='{85A96FA5-A738-4650-95B0-97F0EC9462D6}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Preis Ort' />
+      </viewpoints>
+      <active id='20' />
+      <simple-id uuid='{AB26E836-6734-4595-B76D-9ACC15694D6E}' />
+    </window>
+  </windows>
+  <_.fcp.WorkbookOptimizerRuleConfig.true...workbook-optimizer>
+    <rule-config>
+      <rule ignored='true' ruleID='5' />
+    </rule-config>
+  </_.fcp.WorkbookOptimizerRuleConfig.true...workbook-optimizer>
+</workbook>
