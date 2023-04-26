@@ -4,10 +4,10 @@ import pickle
 import os
 
 # Load the model
-model = pickle.load(open("model.pkl", "rb"))
+model = pickle.load(open("https://github.com/dennissio/From_Data2Dollar/blob/8a11508894b12826a8c8376bd794224f38ca2398/Data_Prep/AirBnB-Booking-Twitter_combined/model.pkl", "rb"))
 
 # Load the dataset
-df = pd.read_csv('xgb_data.csv')
+df = pd.read_csv('https://github.com/dennissio/From_Data2Dollar/blob/8a11508894b12826a8c8376bd794224f38ca2398/Data_Prep/AirBnB-Booking-Twitter_combined/xgb_data.csv')
 
 # add logo
 st.image('logo.png', width=300)
