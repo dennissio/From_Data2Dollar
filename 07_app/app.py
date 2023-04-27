@@ -14,7 +14,7 @@ model = pickle.load(open("07_app/model.pkl", "rb"))
 df = pd.read_csv('07_app/xgb_data.csv')
 
 # add logo
-st.image('logo.png', width=300)
+st.image('07_app/logo.png', width=300)
 
 # styling 
 hide_menu_style = """
