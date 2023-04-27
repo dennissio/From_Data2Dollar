@@ -12,4 +12,4 @@ Anleitung zum Github-Repository für die Vorlesung From Data2Dollar im FS23 - Gr
 *06_tableau:*     Umfasst Tableau Datei der Datenvisualisierung
 ## Bereitstellung
 *07_app*          Umfasst streamlit-App zur Preisvorhersage \
-*Dashboard*       [Zum Dashboard](https://public.tableau.com/app/profile/francesco.simonetta/viz/AnalyticsDashboard-InfluenceonthePricing/Dashboard4?publish=yes)
+*Dashboard*       [Zum Dashboard](https://public.tableau.com/app/profile/francesco.simonetta/viz/AnalyticsDashboard-EinflussaufdasPricing/Dashboard4 und https://public.tableau.com/app/profile/francesco.simonetta/viz/AnalyticsDashboard-berblickderFindings/Dashboard3)
