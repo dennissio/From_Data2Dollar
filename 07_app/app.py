@@ -5,16 +5,15 @@ import pandas as pd
 import pickle
 import os
 
-st.write(os.getcwd())
 
 # Load model
 model = pickle.load(open("07_app/model.pkl", "rb"))
 
 # Load dataset
-df = pd.read_csv('xgb_data.csv')
+df = pd.read_csv('07_app/xgb_data.csv')
 
 # add logo
-st.image('logo.png', width=300)
+st.image('07_app/logo.png', width=300)
 
 # styling 
 hide_menu_style = """
