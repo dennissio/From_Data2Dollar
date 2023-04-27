@@ -1,5 +1,6 @@
 # import libraries
 import streamlit as st
+import xgboost
 import pandas as pd
 import pickle
 import os
