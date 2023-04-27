@@ -5,7 +5,6 @@ import pandas as pd
 import pickle
 import os
 
-st.write(os.getcwd())
 
 # Load model
 model = pickle.load(open("07_app/model.pkl", "rb"))
