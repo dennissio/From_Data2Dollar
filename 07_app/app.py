@@ -1,12 +1,13 @@
+# import libraries
 import streamlit as st
 import pandas as pd
 import pickle
 import os
 
-# Load the model
+# Load model
 model = pickle.load(open("model.pkl", "rb"))
 
-# Load the dataset
+# Load dataset
 df = pd.read_csv('xgb_data.csv')
 
 # add logo
@@ -34,20 +35,22 @@ date = st.date_input('Date')
 input_date = str(date).split('-')
 
 # get user input
-i = st.selectbox('City', df.columns[15:29])
+i = st.selectbox('City', df.columns[9:23])
 
+#define values for prediction
 def get_user_input(city):
     df_input = df.loc[df[city] == 1,:]
     df_model = df_input.mean()
     return df_model
 
+#transpose data
 df_model = get_user_input(i)
 df_models = df_model.to_frame().transpose()
 df_models['day'] = int(input_date[2])
 df_models['month'] = int(input_date[1])
 df_models['year'] = int(input_date[0])
 
-# get user input
+# predict price
 if st.button ('Predict Price'):
     X = df_models.drop('price', axis=1)
     prediction = model.predict(X)
