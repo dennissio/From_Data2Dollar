@@ -2,7 +2,7 @@
 
 # Aufbau Github-Repository
 ## Datenverständnis
-01_airbnb:      Umfasst alle Dateien für den Selenium-Scraper für die Datenfelder von AirBnB sowie die Output Dateien
+01_airbnb:      Umfasst alle Dateien für den Selenium-Scraper für die Datenfelder von AirBnB sowie die Output Dateien n\
 02_booking:     Umfasst alle Dateien für den Selenium-Scraper für die Datenfelder von Booking sowie die Output Dateien
 03_twitter:     Umfasst alle Dateien für den SnScraper für die Datenfelder von Twitter sowie die Output Dateien
 ## Datenvorbereitung
