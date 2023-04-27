@@ -1,6 +1,6 @@
-# Anleitung zum Github-Repository für die Vorlesung From Data2Dollar im FS23 - Gruppe 3: Baur Manuel, Gasser Mathieu, Harimci Deniz und Francesco Simonetta
-
 # Aufbau Github-Repository
+Anleitung zum Github-Repository für die Vorlesung From Data2Dollar im FS23 - Gruppe 3: Baur Manuel, Gasser Mathieu, Harimci Deniz und Francesco Simonetta
+
 ## Datenverständnis
 *01_airbnb:*     Umfasst alle Dateien für den Selenium-Scraper für die Datenfelder von AirBnB sowie die Output Dateien \
 *02_booking:*    Umfasst alle Dateien für den Selenium-Scraper für die Datenfelder von Booking sowie die Output Dateien \
