@@ -11,7 +11,7 @@ st.write(os.getcwd())
 model = pickle.load(open("07_app/model.pkl", "rb"))
 
 # Load dataset
-df = pd.read_csv('xgb_data.csv')
+df = pd.read_csv('07_app/xgb_data.csv')
 
 # add logo
 st.image('logo.png', width=300)
