@@ -7,7 +7,7 @@ import os
 st.write(os.getcwd())
 
 # Load model
-model = pickle.load(open("model.pkl", "rb"))
+model = pickle.load(open("07_app/model.pkl", "rb"))
 
 # Load dataset
 df = pd.read_csv('xgb_data.csv')
