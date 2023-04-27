@@ -4,6 +4,8 @@ import pandas as pd
 import pickle
 import os
 
+print(os.getcwd())
+
 # Load model
 model = pickle.load(open("model.pkl", "rb"))
 
