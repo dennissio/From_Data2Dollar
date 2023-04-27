@@ -12,4 +12,4 @@
 06_tableau:     Umfasst Tableau Datei der Datenvisualisierung
 ## Bereitstellung
 07_app          Umfasst streamlit-App zur Preisvorhersage \
-Dashboard       [Erreichbar hier](Linkhttps://public.tableau.com/app/profile/francesco.simonetta/viz/AnalyticsDashboard-                 InfluenceonthePricing/Dashboard4?publish=yes)
+Dashboard       (Linkhttps://public.tableau.com/app/profile/francesco.simonetta/viz/AnalyticsDashboard-InfluenceonthePricing/Dashboard4?publish=yes)
