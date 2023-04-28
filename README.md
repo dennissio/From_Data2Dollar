@@ -6,7 +6,7 @@ Anleitung zum Github-Repository für die Vorlesung From Data2Dollar im FS23 - Gr
 ## Datenverständnis
 *01_airbnb:*     Umfasst alle Dateien für den Selenium-Scraper für die Datenfelder von AirBnB sowie die Output Dateien \
 *02_booking:*    Umfasst alle Dateien für den Selenium-Scraper für die Datenfelder von Booking sowie die Output Dateien \
-*03_twitter:*    Umfasst alle Dateien für den SnScraper für die Datenfelder von Twitter sowie die Output Dateien 
+*03_twitter&events:*    Umfasst alle Dateien für den SnScraper für die Datenfelder von Twitter sowie die Output Dateien. Zudem auch die Files, welche zeigen, wie wir mit der Auswahl an Events und Scrapdatum sowie bei der Berechnung der Relevanz-Ratios vorgegagen sind
 ## Datenvorbereitung
 *04_data_prep:*   Umfasst alle Jupyter Notebooks, welche zur Bereinigung der Datensets verwendet wurden
 ## Modellierung
@@ -17,4 +17,4 @@ Anleitung zum Github-Repository für die Vorlesung From Data2Dollar im FS23 - Gr
 *Dashboard*       [Zum Dashboard 1](https://public.tableau.com/app/profile/francesco.simonetta/viz/AnalyticsDashboard-EinflussaufdasPricing/Dashboard4) \  [Zum Dashboard 2](https://public.tableau.com/app/profile/francesco.simonetta/viz/AnalyticsDashboard-berblickderFindings/Dashboard3)
 
 ## Quellen
-*sources*       genutzte Stackoverflow Fragen
+*08_sources*      Genutzte Stackoverflow Fragen
