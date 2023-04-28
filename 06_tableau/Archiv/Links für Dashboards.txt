@@ -1,0 +1,5 @@
+Links zu Dashboards auf Tableau PublicÜberblick:
+https://public.tableau.com/app/profile/francesco.simonetta/viz/AnalyticsDashboard-berblickderFindings/Dashboard3
+
+Findings:
+https://public.tableau.com/app/profile/francesco.simonetta/viz/AnalyticsDashboard-EinflussaufdasPricing/Dashboard4
